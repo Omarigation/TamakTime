@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Button, Alert, Image, TouchableHighlight, View } from 'react-native';
+import TamakTimePage from './TamakTimePage';
 
 export default function App() {
 
@@ -7,11 +8,12 @@ export default function App() {
     {text: 'Yes', onPress: () => console.log('Yes')}, {text: 'No'}
   ]);
   return (
-    <View style = {styles.mainBlock}>
-      <View style={[styles.box, {backgroundColor: 'red', flex: 6}]}></View>
-      <View style={[styles.box, {backgroundColor: 'blue', flex: 2}]}></View>
-      <View style={[styles.box, {backgroundColor: 'black', flex: 2}]}></View>
-    </View>
+    <TamakTimePage></TamakTimePage>
+    // <View style = {styles.mainBlock}>
+    //   <View style={[styles.box, {backgroundColor: 'red', flex: 6}]}></View>
+    //   <View style={[styles.box, {backgroundColor: 'blue', flex: 2}]}></View>
+    //   <View style={[styles.box, {backgroundColor: 'black', flex: 2}]}></View>
+    // </View>
     // <SafeAreaView style={styles.container}>
     //   <Text>Omar!!!</Text>
     //   <Button title='Press' onPress={() => Alert.alert('Tamak Times', 'UseFull web application', [
